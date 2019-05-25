@@ -1,0 +1,107 @@
+div {
+    background-color: cornsilk;
+  margin-left: left;
+  padding-left: 10px;
+  padding-right: 10px;
+
+   }
+   fieldset {
+    background-color :whitesmoke;
+    max-width:50px;
+    padding:8px;	 
+    border:5px solid ;
+    color:goldenrod; 
+    border-radius: 5px;
+    min-height:150px; }
+    legend{
+      text-align: left;
+      border-radius: 5px;
+    box-shadow: 0 0 0 5px whitesmoke;
+    margin-left: 16px;
+      border-block-color:whitesmoke;
+      border: 50px;
+      padding: 6px 10px ;
+        border:3px solid ;
+  color:rgb(194, 147, 29);
+  font-size:30px;
+  text-align:left;
+  font-family: Arial, Helvetica, sans-serif;
+
+    }
+.tab1 ,.tab2
+{
+  max-width:51px;
+
+}
+
+
+
+
+
+   body { 
+    background-image: url(https://image.freepik.com/free-photo/vegetables-set-left-black-slate_1220-685.jpg);
+    background-repeat:  repeat;
+    background-size: 100%;
+  }
+   .table1 , .table2 {
+    font-family:Arial;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    line-height: 1.7em;
+    text-align:center;
+    border-collapse:collapse;
+    }
+    .table1 thead th:empty{
+      background:transparent;
+      border:none;
+  }
+  th {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    letter-spacing:auto ;
+    color: midnightblue
+
+  }
+   
+    td ,tr {
+      border-radius: 3px;
+    padding: 25px 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+      padding:15px;
+    color:rgb(209, 153, 10);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-optical-sizing: 50px;
+    font-style: italic;
+    font-weight: bolder
+    }
+    
+    
+       
+      
+    
+   
+    tr:nth-child(even) {
+      background-color: floralwhite;
+    }
+    .tab1{
+      float: left;
+    }
+    .tab{
+        float: left;
+      }
+      .tab1{
+          float: left;
+          width: 20%;
+        }
+      
+   
+
+    image{
+      size: 100%
+    }
+  
