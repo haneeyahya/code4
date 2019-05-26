@@ -318,7 +318,7 @@ class Options extends Component{
                         <tr >
                             <td >{iteam.itemDesc}</td>
                             <td> {iteam.itemPrice}</td>
-                            <td><img src={iteam.itemImage} height="100px" width="90px" alt="No Pic"></img></td>
+                            <td><img src={iteam.itemImage} height="90px" width="90px" alt="No Pic"></img></td>
                             <input type="Radio" onClick={this.deliteams} ></input>
                           </tr>)}
                 </table>
@@ -344,7 +344,7 @@ class Options extends Component{
                   
                     <td >{a[0].itemDesc}</td>
                     <td > {a[0].itemPrice} </td>
-                    <td><img src={a[0].itemImage} height="90px" width="90px" alt="No Pic"></img></td>
+                    <td><img src={a[0].itemImage} height="100px" width="100px" alt="No Pic"></img></td>
 
                     
                   </tr>)}
