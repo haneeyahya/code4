@@ -344,7 +344,7 @@ class Options extends Component{
                   
                     <td >{a[0].itemDesc}</td>
                     <td > {a[0].itemPrice} </td>
-                    <td><img src={a[0].itemImage} height="60px" width="60px" alt="No Pic"></img></td>
+                    <td><img src={a[0].itemImage} height="90px" width="90px" alt="No Pic"></img></td>
 
                     
                   </tr>)}
