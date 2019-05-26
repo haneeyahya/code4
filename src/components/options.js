@@ -260,8 +260,6 @@ export default Options;
 import React , {Component} from 'react';
 import axios from 'axios'
 import './options.css'
-import { userInfo } from 'os';
-import { stringify } from 'querystring';
 var sum=0;
 
 class Options extends Component{
@@ -320,7 +318,7 @@ class Options extends Component{
                         <tr >
                             <td >{iteam.itemDesc}</td>
                             <td> {iteam.itemPrice}</td>
-                            <td><img src={iteam.itemImage} height="90px" width="80px"></img></td>
+                            <td><img src={iteam.itemImage} height="100px" width="90px" alt="No Pic"></img></td>
                             <input type="Radio" onClick={this.deliteams} ></input>
                           </tr>)}
                 </table>
@@ -346,7 +344,7 @@ class Options extends Component{
                   
                     <td >{a[0].itemDesc}</td>
                     <td > {a[0].itemPrice} </td>
-                    <td><img src={a[0].itemImage} height="60px" width="60px"></img></td>
+                    <td><img src={a[0].itemImage} height="60px" width="60px" alt="No Pic"></img></td>
 
                     
                   </tr>)}
