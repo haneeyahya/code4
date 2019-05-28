@@ -1,5 +1,4 @@
 div {
-    background-color: cornsilk;
   margin-left: left;
   padding-left: 10px;
   padding-right: 10px;
@@ -7,6 +6,7 @@ div {
    }
    fieldset {
     background-color :whitesmoke;
+    
     max-width:50px;
     padding:8px;	 
     border:5px solid ;
@@ -39,7 +39,7 @@ div {
 
 
    body { 
-    background-image: url(https://image.freepik.com/free-photo/vegetables-set-left-black-slate_1220-685.jpg);
+    background-image: url(https://img.freepik.com/free-photo/gold-cutlery-set-black-background_1220-4103.jpg?size=626&ext=jpg);
     background-repeat:  repeat;
     background-size: 100%;
   }
@@ -54,15 +54,16 @@ div {
     text-align:center;
     border-collapse:collapse;
     }
-    .table1 thead th:empty{
+    th{
       background:transparent;
       border:none;
-  }
-  th {
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 20px;
+  
+  
+    flex-flow:wrap;
+    font:80em initial;
+    font-size: 17px;
     letter-spacing:auto ;
-    color: midnightblue
+    color: midnightblue;
 
   }
    
@@ -89,7 +90,7 @@ div {
       background-color: floralwhite;
     }
     .tab1{
-      float: left;
+      float: right;
     }
     .tab{
         float: left;
@@ -97,9 +98,14 @@ div {
       .tab1{
           float: left;
           width: 20%;
+         
         }
-      
-   
+        .C{
+      float: left;
+                }
+        
+        
+        .table1 .table2 td { height: 15px;}
 
     image{
       size: 100%

@@ -260,6 +260,7 @@ export default Options;
 import React , {Component} from 'react';
 import axios from 'axios'
 import './options.css'
+import Add from './additeam'
 var sum=0;
 
 class Options extends Component{
@@ -284,17 +285,17 @@ class Options extends Component{
       
         
       
-      deliteams =(index ,i)=>{
-        const iteams=Object.assign([],this.state.iteams);
-        var a= iteams.splice(index,1);
+      deliteams =(id)=>{
+        const iteams=[...this.state.iteams];
+        const a= iteams.splice(id,1);
         
-        this.setState({iteams:iteams});
+      //  this.setState({iteams:iteams});
         this.state.pell.push(a);
         sum =sum + (a[0].itemPrice);
         console.log(this.state.pell);
        
        console.log(sum);
-        
+       this.setState({iteams:iteams});
         
         
       }
@@ -309,17 +310,17 @@ class Options extends Component{
                     <table id="table1">
 
                     <tr>
-                          <th>itemDesc</th>
-                          <th>itemPrice</th>
-                          <th>itemImage</th>
+                          <th>ItemDesc</th>
+                          <th>Price</th>
+                          <th>Image</th>
                           <th >select</th>
                         </tr>
                         { this.state.iteams.map((iteam,index) =>
-                        <tr >
+                        <tr id={iteam.itemId} >
                             <td >{iteam.itemDesc}</td>
                             <td> {iteam.itemPrice}</td>
-                            <td><img src={iteam.itemImage} height="90px" width="90px" alt="No Pic"></img></td>
-                            <input type="Radio" onClick={this.deliteams} ></input>
+                            <td ><img src={iteam.itemImage} height="70px" width="70px" alt="No Pic" float="left"></img></td>
+                            <input  type="Radio" onClick={()=> this.deliteams(index)} ></input>
                           </tr>)}
                 </table>
                 </fieldset>
@@ -332,21 +333,19 @@ class Options extends Component{
                   <legend>Bill</legend>
                   <table id="table2">
                   <tr>
-                          <th>itemDesc</th>
-                          <th>itemPrice</th>
-                          <th>itemImage</th>
+                          <th>ItemDesc</th>
+                          <th>Price</th>
+                          
                         </tr>
                 
 
-                 { this.state.pell.map(( a,index ) =>
+                 { this.state.pell.map((a,id ) =>
                  
                 <tr  >
                   
                     <td >{a[0].itemDesc}</td>
                     <td > {a[0].itemPrice} </td>
-                    <td><img src={a[0].itemImage} height="100px" width="100px" alt="No Pic"></img></td>
-
-                    
+                        
                   </tr>)}
                   </table>
                   <hr/><br/>
@@ -354,9 +353,9 @@ class Options extends Component{
                 </fieldset>
                 
                 
-               
+                <br/><br/><br/>
 
-
+                <Add/>
                 
                   
                    
@@ -370,8 +369,10 @@ class Options extends Component{
  
 export default Options;
 
-
-
+//(https://image.freepik.com/free-photo/vegetables-set-left-black-slate_1220-685.jpg);
+    //https://image.freepik.com/free-photo/gold-cutlery-set-black-background_1220-4103.jpg
+//https://img.freepik.com/free-photo/gold-cutlery-set-black-background_1220-4095.jpg?size=626&ext=jpg);
+    
 
 
 
