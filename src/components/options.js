@@ -260,7 +260,6 @@ export default Options;
 import React , {Component} from 'react';
 import axios from 'axios'
 import './options.css'
-import Add from './additeam'
 var sum=0;
 
 class Options extends Component{
@@ -355,7 +354,7 @@ class Options extends Component{
                 
                 <br/><br/><br/>
 
-                <Add/>
+               
                 
                   
                    
